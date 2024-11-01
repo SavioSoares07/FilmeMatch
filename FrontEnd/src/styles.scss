@@ -1,0 +1,31 @@
+//Colors Variables
+$bg-primary: #6c3691;
+$bg-dark: #272727;
+
+$txt-white: #fff;
+
+//Style Global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-dark;
+  color: $txt-white;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: $txt-white;
+}
