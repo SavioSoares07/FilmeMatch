@@ -5,10 +5,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 //* Import Angular Material
 import { AngularMaterial } from '../material-angular/material-angular.module';
+import { RegisterComponent } from './register/register.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [LoginComponent, NotFoundComponent],
-  imports: [AngularMaterial],
-  exports: [LoginComponent, NotFoundComponent],
+  declarations: [LoginComponent, NotFoundComponent, RegisterComponent],
+  imports: [AngularMaterial, RouterModule],
+  exports: [LoginComponent, NotFoundComponent, RegisterComponent],
 })
 export class PagesModule {}
