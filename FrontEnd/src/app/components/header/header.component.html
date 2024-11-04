@@ -1,0 +1,18 @@
+<header>
+  <!-- Elementos comuns, visíveis para todos -->
+  <div class="logo">
+    <a routerLink="">Movie Match</a>
+  </div>
+
+  <!-- Mostrar apenas para usuários logados -->
+  <nav *ngIf="!isLoggedIn" class="isLoggedIn">
+    <a routerLink="/perfil">Perfil</a>
+    <button (click)="logout()">Sair</button>
+  </nav>
+
+  <!-- Mostrar apenas para usuários não logados -->
+  <nav *ngIf="isLoggedIn" class="isNotLoggedIn">
+    <a routerLink="/signin">Login</a>
+    <a routerLink="/signup">Cadastro</a>
+  </nav>
+</header>

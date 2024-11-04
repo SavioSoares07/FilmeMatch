@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  height: 100px;
+  border-bottom: 1px solid #ccc;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: default;
+    text-transform: uppercase;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.isLoggedIn {
+  button {
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: 500ms all;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
