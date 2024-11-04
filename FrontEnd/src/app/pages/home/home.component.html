@@ -1,1 +1,77 @@
 <app-header></app-header>
+
+<body>
+  <main>
+    <div class="container">
+      <ng-container
+        [ngTemplateOutlet]="getTemplate(currentPage)"
+      ></ng-container>
+
+      <ng-template #template1 class="template">
+        <div id="t1">
+          <div class="containerTemplate1">
+            <div class="containerTextTemplate1">
+              <h1>Criar Lista</h1>
+              <p>
+                Crie sua lista de filme tanto para você quanto para sues amigos
+              </p>
+            </div>
+            <div class="footerContainer1">
+              <label for="selectMovie" class="label-radio">Criar Lista</label>
+              <input
+                type="radio"
+                name="btn-firstOption"
+                id="selectMovie"
+                class="custom-radio"
+              />
+            </div>
+          </div>
+          <div class="containerTemplate1">
+            <div class="containerTextTemplate1">
+              <h1>Criar Lista</h1>
+              <p>
+                Crie sua lista de filme tanto para você quanto para sues amigos
+              </p>
+            </div>
+            <div class="footerContainer1">
+              <label for="selectList" class="label-radio"
+                >Selecionar Lista</label
+              >
+              <input
+                type="radio"
+                name="btn-firstOption"
+                id="selectList"
+                class="custom-radio"
+              />
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template #template2 class="template">
+        <p>Este é o Template 2</p>
+      </ng-template>
+
+      <ng-template #template3 class="template">
+        <p>Este é o Template 3</p>
+      </ng-template>
+
+      <div id="container-button">
+        <button (click)="previousTemplate()">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="chevron_left"
+          ></mat-icon>
+        </button>
+        <button (click)="nextTemplate()">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="keyboard_arrow_right"
+          ></mat-icon>
+        </button>
+      </div>
+    </div>
+  </main>
+</body>

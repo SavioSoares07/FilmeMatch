@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ComponentsModule } from '../components/components.module';
 import { CommonModule } from '@angular/common';
+import { PrimeNg } from '../primeNg/primeng.module';
 @NgModule({
   declarations: [
     LoginComponent,
@@ -17,12 +18,19 @@ import { CommonModule } from '@angular/common';
     RegisterComponent,
     HomeComponent,
   ],
-  imports: [AngularMaterial, RouterModule, ComponentsModule, CommonModule],
+  imports: [
+    AngularMaterial,
+    RouterModule,
+    ComponentsModule,
+    CommonModule,
+    PrimeNg,
+  ],
   exports: [
     LoginComponent,
     NotFoundComponent,
     RegisterComponent,
     HomeComponent,
+    PrimeNg,
   ],
 })
 export class PagesModule {}

@@ -1,0 +1,70 @@
+@import "../../../styles.scss";
+
+.p-stepper {
+  flex-basis: 50rem;
+}
+
+main {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+
+  div.container {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 200px;
+    width: 60%;
+
+    #t1 {
+      display: flex;
+      justify-content: space-between;
+
+      .footerContainer1 {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .custom-radio {
+          display: none;
+        }
+        .label-radio {
+          display: inline-block;
+          padding: 10px 20px;
+          border: 2px solid #ccc; // Borda padrão
+          border-radius: 5px; // Arredondamento
+          background-color: #fff; // Cor de fundo padrão
+          cursor: pointer; // Mão ao passar o mouse
+          transition: background-color 0.3s, border-color 0.3s; // Transição suave
+        }
+        .custom-radio:checked .label-radio {
+          background-color: #007bff;
+          border-color: #181818;
+          color: #fff;
+        }
+
+        .label-radio:hover {
+          border-color: #007bff; // Muda a cor da borda ao passar o mouse
+        }
+      }
+    }
+
+    div#container-button {
+      margin-top: 40px;
+      display: flex;
+      gap: 20px;
+      button {
+        background-color: $btn-button;
+        color: $txt-white;
+
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+      }
+    }
+  }
+}
